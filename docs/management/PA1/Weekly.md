@@ -107,8 +107,12 @@
 
 ### Actions:
 - Clarify AI functionality in more detail
-- Add concrete examples
 - Prepare for report writing
+
+### To-do Tasks:
+- Nguyễn Xuân Hoàng (leader): Prepare plan for the next sprint
+- Lê Quí Thịnh: Write one report for the two recent meetings, one summary of what has been done so far (review)
+- Phạm Đức Thịnh, Đỗ Khắc Thành Công, Phan Đan Thần: Complete the report for the first sprint
 
 ### Summary:
 - Assigned tasks have been completed
