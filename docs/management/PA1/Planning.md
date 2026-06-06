@@ -63,7 +63,7 @@ This project strictly follows the Scrum process. The development lifecycle is di
 | Complete Spec Kit Training | [x] | Lê Quí Thịnh | Phạm Đức Thịnh | June 30, 2026 |
 | Complete Spec Kit Training | [x] | Phạm Đức Thịnh | Phan Đan Thần | June 30, 2026 |
 | Complete Spec Kit Training | [x] | Phan Đan Thần | Nguyễn Xuân Hoàng | June 30, 2026 |
-| Write AI Usage Report & Export Jira/Git logs | [x] | Nguyễn Xuân Hoàng | Phan Đan Thần | July 02, 2026 |
+| Write AI Usage Report & Export Jira/Git logs | [x] | Phạm Đức Thịnh | Phan Đan Thần | July 02, 2026 |
 
 ### 4.3 Build Plan
 * **Build 1 (End of Sprint 3):** Core LMS functionality release. Users can authenticate, create classes, add students, and upload basic materials.
