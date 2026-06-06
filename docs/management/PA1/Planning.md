@@ -6,7 +6,7 @@
 ## 1. Introduction
 *Author: Nguyễn Xuân Hoàng, Reviewer: Lê Quí Thịnh, Editor: Nguyễn Xuân Hoàng*
 
-EduMate is an AI-powered Learning Management System (LMS) inspired by Google Classroom. It is designed to connect teachers and students in a seamless digital educational environment while deeply integrating Artificial Intelligence (AI) tools. By leveraging AI, EduMate aims to personalize learning paths, automate assessment creation, and enhance educational interactions, making teaching and learning more proactive and intelligent.
+EduSubmit is an AI-powered Learning Management System (LMS) inspired by Google Classroom. It is designed to connect teachers and students in a seamless digital educational environment while deeply integrating Artificial Intelligence (AI) tools. By leveraging AI, EduSubmit aims to personalize learning paths, automate assessment creation, and enhance educational interactions, making teaching and learning more proactive and intelligent.
 
 ## 2. Project Overview
 *Author: Nguyễn Xuân Hoàng, Reviewer: Lê Quí Thịnh, Editor: Nguyễn Xuân Hoàng*
