@@ -1,4 +1,4 @@
-# Project Plan: EduMate
+# Project Plan: EduSubmit
 **Course:** CS300 - CSC13002 - Introduction to Software Engineering
 **Project Assignment:** PA2-2026
 **Group:** 5 anh em
