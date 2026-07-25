@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
@@ -19,4 +20,18 @@ function App() {
   );
 }
 
+=======
+import SubmissionList from "./components/SubmissionList";
+
+
+function App(){
+
+  return (
+    <SubmissionList />
+  )
+
+}
+
+
+>>>>>>> a9411f854782af8cab2df09917ff448ec92c9f9b
 export default App;
