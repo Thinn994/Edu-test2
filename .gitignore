@@ -3,3 +3,14 @@ venv/
 __pycache__/
 .env
 .DS_Store
+# Database
+backend/*.db
+
+# Upload files
+backend/uploads/
+
+# VS Code
+.vscode/
+
+# Node
+frontend/node_modules/
