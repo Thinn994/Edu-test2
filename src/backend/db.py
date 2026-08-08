@@ -1,7 +1,6 @@
 import sqlite3
 import os
 
-
 DATABASE = "edusubmit.db"
 
 
@@ -9,6 +8,7 @@ def get_connection():
     conn = sqlite3.connect(DATABASE)
     conn.row_factory = sqlite3.Row
     return conn
+
 
 
 def init_database():
@@ -45,5 +45,36 @@ def init_database():
     """)
 
 
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS material (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+        course_id INTEGER,
+
+        lecturer_id INTEGER,
+
+        file_name TEXT,
+
+        file_path TEXT,
+
+        file_type TEXT,
+
+        uploaded_at TEXT
+    )
+    """)
+
+
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS quiz (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        course_id INTEGER,
+        title TEXT NOT NULL,
+        description TEXT,
+        created_at TEXT
+    )
+    """)
+
+    
     conn.commit()
+
     conn.close()

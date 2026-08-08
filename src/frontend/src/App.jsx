@@ -1,31 +1,80 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+
 import Dashboard from './pages/Dashboard';
 import CourseStream from './pages/CourseStream';
 import Register from './pages/Register';
+
 import SubmissionList from "./components/SubmissionList";
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        {/* Khai báo đường dẫn cho trang Đăng ký/Đăng nhập của Thịnh */}
-        <Route path="/register" element={<Register />} />
+import MaterialsPage from "./pages/MaterialsPage";
+import QuizPage from "./pages/QuizPage";
 
-        {/* Dashboard chính */}
-        <Route path="/dashboard" element={<Dashboard />} />
 
-        {/* Đường dẫn mở trang chi tiết lớp học (Đã thêm :courseId của team) */}
-        <Route path="/course/stream/:courseId" element={<CourseStream />} />
+function App(){
 
-        {/* Đường dẫn tạm thời để test phần Submission */}
-        <Route path="/submissions" element={<SubmissionList />} />
+    return (
 
-        {/* Mặc định vào web sẽ đẩy thẳng vào trang Register để test đăng nhập */}
-        <Route path="/" element={<Navigate to="/register" replace />} />
-      </Routes>
-    </BrowserRouter>
-  );
+        <BrowserRouter>
+
+            <Routes>
+
+                {/* Dashboard */}
+                <Route 
+                    path="/dashboard" 
+                    element={<Dashboard />} 
+                />
+
+
+                {/* Course stream */}
+                <Route 
+                    path="/course/stream/:courseId" 
+                    element={<CourseStream />} 
+                />
+
+
+                {/* Submission management */}
+                <Route 
+                    path="/submissions" 
+                    element={<SubmissionList />} 
+                />
+
+
+                {/* Material management - PA4 */}
+                <Route 
+                    path="/materials" 
+                    element={<MaterialsPage />} 
+                />
+
+
+                {/* Quiz management - PA4 */}
+                <Route 
+                    path="/quizzes" 
+                    element={<QuizPage />} 
+                />
+
+
+                {/* Default */}
+                <Route 
+                    path="/" 
+                    element={<Navigate to="/register" replace />} 
+                />
+
+
+                {/* Register */}
+                <Route 
+                    path="/register" 
+                    element={<Register />} 
+                />
+
+
+            </Routes>
+
+        </BrowserRouter>
+
+    );
+
 }
+
 
 export default App;

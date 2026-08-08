@@ -1,30 +1,53 @@
-# --- Environment & Secrets ---
+# ======================
+# Environment & Secrets
+# ======================
+
 .env
 .env.*
 .env.local
 
-# --- Python / Flask Backend ---
+
+# ======================
+# Python / Flask Backend
+# ======================
+
 __pycache__/
+**/__pycache__/
 *.pyc
 *.pyo
+
 venv/
 .venv/
 env/
+
+
+# ======================
 # Database & Uploads
-backend/*.db
-backend/uploads/
+# ======================
+
+**/*.db
+**/uploads/
+
 instance/
 
-# --- Node / Vite Frontend ---
+
+# ======================
+# Node / Vite Frontend
+# ======================
+
 node_modules/
 frontend/node_modules/
+
 dist/
 build/
 frontend/dist/
+
 *.log
 
-# --- OS & Editor Junk ---
+
+# ======================
+# OS & Editor
+# ======================
+
 .DS_Store
-Thumbs.db
 .vscode/
-.idea/
