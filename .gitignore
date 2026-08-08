@@ -1,16 +1,30 @@
-node_modules/
-venv/
-__pycache__/
+# --- Environment & Secrets ---
 .env
-.DS_Store
-# Database
+.env.*
+.env.local
+
+# --- Python / Flask Backend ---
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+env/
+# Database & Uploads
 backend/*.db
-
-# Upload files
 backend/uploads/
+instance/
 
-# VS Code
-.vscode/
-
-# Node
+# --- Node / Vite Frontend ---
+node_modules/
 frontend/node_modules/
+dist/
+build/
+frontend/dist/
+*.log
+
+# --- OS & Editor Junk ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

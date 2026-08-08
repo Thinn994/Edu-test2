@@ -136,4 +136,4 @@ const SidebarItem = ({ icon, label, active }) => (
   </button>
 );
 
-export default Dashboard;
+export default Dashboard;   
