@@ -1,37 +1,23 @@
-<<<<<<< HEAD
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import CourseStream from './pages/CourseStream';
-
+import Register from './pages/Register'; 
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        {/* Khai báo đường dẫn cho trang Đăng ký */}
+        <Route path="/register" element={<Register />} />
+
         <Route path="/dashboard" element={<Dashboard />} />
-        {/* Đường dẫn mở trang chi tiết lớp học */}
         <Route path="/course/stream" element={<CourseStream />} />
-        
-        {/* Mặc định vào web sẽ đẩy thẳng vào Dashboard */}
-        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+
+        <Route path="/" element={<Navigate to="/register" replace />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
-=======
-import SubmissionList from "./components/SubmissionList";
-
-
-function App(){
-
-  return (
-    <SubmissionList />
-  )
-
-}
-
-
->>>>>>> a9411f854782af8cab2df09917ff448ec92c9f9b
 export default App;
